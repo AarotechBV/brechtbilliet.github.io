@@ -42,7 +42,7 @@ In this article we will create a set of 4 custom written items that work togethe
 - `<form-wrapper>` component: This will hold the native form element and a submitted state.
 - `<form-input-wrapper>` component: This has a label and takes care of validation error messages.
 - `[formInput]` directive: This is used as glue between the `<form-input-wrapper>` and the inputs.
-- `formInputErrors` pipe: This is used to render the errors without to much code.
+- `formInputErrors` pipe: This is used to render the errors without too much code.
 
 I'm not a huge fan of writing our own `FormBuilderService`, nor am I a fan of using a third party lib like `formly` that uses huge chunks of
 configurations with embedded logic. We want to stay as close as possible to Angular, but we do want to avoid redundancy.
@@ -167,7 +167,7 @@ export class FormInputWrapperComponent {
 
 ## The structure
 
-A small recap: We have one `<form-wrapper>` component which holds the submitted state, and that wraps `<form-input-wrapper>`'s to reduce redundancy with a `[formInput]` directive
+A small recap: we have one `<form-wrapper>` component which holds the submitted state, and that wraps `<form-input-wrapper>`'s to reduce redundancy with a `[formInput]` directive
 that acts as glue. In the code below we show an example where we have a **general** form group, and an **address** form group. This HTML won't change anymore,
 so this is the only code we will have to write when creating forms in the future.
 
